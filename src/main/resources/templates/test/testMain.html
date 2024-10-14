@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h3>여러가지 ModelAttribute 전달방법</h3>
+    <p>
+        <ul>
+            <li><a th:href="@{/mapping/page}">page.html로 이동</a></li>
+            <li><a th:href="@{/mapping/requestMapping}">
+                Request Mapping And Model
+            </a></li>
+            <li><a th:href="@{/mapping/modelAndView}">modelAndView</a></li>
+            <li><a th:href="@{/mapping/redirectView}">redirectView</a></li>
+            <li><a th:href="@{/mapping/redirectView2}">redirectView2</a></li>
+        </ul>
+    </p>
+<p>
+    <h3>외부 URL 사용</h3>
+    <p>
+        <ul>
+            <li><a th:href="@{/mapping/redirect_1}">redirect_1</a></li>
+            <li><a th:href="@{/mapping/redirect_2}">redirect_2</a></li>
+        </ul>
+    </p>
+</p>
+</html>
