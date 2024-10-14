@@ -1,10 +1,15 @@
 package com.my.articles.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Table(name = "article")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Article {
 
     @Id
@@ -14,5 +19,6 @@ public class Article {
     private String title;
     @Column(nullable = false, length = 1000)
     private String content;
+
 
 }

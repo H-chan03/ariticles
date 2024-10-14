@@ -26,12 +26,11 @@
     </thead>
     <tbody>
     <div>
-      <tr>
-        <th scope="row">1</th>
-        <td>
-          <a href="">제목111 </a>
-        </td>
-        <td>내용 1111</td>
+      <tr th:each="dao : ${lists}" th:object="${dao}">
+        <th th:text="*{id}">1</th>
+<!--        <th th:text="*{title}"><a href=""></a> </th>-->
+        <th><a href="">[[ *{title} ]]</a> </th>
+        <th th:text="*{content}">내용 1111</th>
       </tr>
     </div>
     </tbody>
