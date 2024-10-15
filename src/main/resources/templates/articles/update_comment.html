@@ -2,20 +2,14 @@
 <html xmlns:th="www.thymeleaf.org"
       xmlns:layout="www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/layout}">
+<head>
+  <meta charset="UTF-8">
+  <!--  <script src="/js/jquery.js"></script>-->
+</head>
 
-<meta charset="UTF-8">
-<title>School Manager/Insert-Data</title>
-<!--    전체 적용될 CSS-->
-<th:block layout:fragment="css">
-
-</th:block>
-<!--    전체 적용될 스크립트-->
-<th:block layout:fragment="script">
-
-</th:block>
-
-<!--우리가 작업할 공간-->
-<div layout:fragment="content" class="content-insert-data">
+<!--  우리가 작업할 공간 -->
+<body>
+<div layout:fragment="content" class="content">
   <form class="container">
     <div class="mb3">
       <label class="form-label"> 닉네임</label>
@@ -29,4 +23,6 @@
     <a th:href="">Go to Article List</a>
   </form>
 </div>
+
+</body>
 </html>
